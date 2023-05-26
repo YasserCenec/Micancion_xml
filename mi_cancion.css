@@ -1,0 +1,39 @@
+/* Estilos para el título de la canción */
+h1 {
+font-size: 2em;
+font-weight: bold;
+color: red;
+}
+
+/* Estilos para el autor de la canción */
+h2 {
+font-style: italic;
+color: orange;
+}
+
+/* Estilos para los versos */
+li {
+font-family: serif;
+margin-bottom: 10px;
+color: #000000;
+}
+
+/* Estilos para el número de estrofas*/
+ul::before {
+counter-increment: estrofa;
+content: counter(estrofa);
+font-weight: bold;
+color: #8b0000;
+}
+
+.letra ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.letra li {
+display: inline-block;
+padding: 10px;
+}
